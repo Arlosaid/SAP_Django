@@ -19,6 +19,11 @@ from personas.views import detallePersona
 from personas.views import nuevaPersona
 from personas.views import editarPersona
 from personas.views import eliminarPersona
+from domicilios.views import verDomicilio
+from domicilios.views import detalleDomicilio
+from domicilios.views import nuevoDomicilio
+from domicilios.views import editarDomicilio
+from domicilios.views import eliminarDomicilio
 
 from webapp.views import bienvenido
 
@@ -28,5 +33,11 @@ urlpatterns = [
     path('detalle_persona/<int:id>', detallePersona),
     path('nueva_persona', nuevaPersona),
     path('editar_persona/<int:id>', editarPersona),
-    path('eliminar_persona/<int:id>', eliminarPersona)
+    path('eliminar_persona/<int:id>', eliminarPersona),
+    path('ver_domicilio/', verDomicilio, name='domicilio'),
+    path('ver_domicilio/detalle_domicilio/<int:id>', detalleDomicilio),
+    path('ver_domicilio/nuevo_domicilio/', nuevoDomicilio),
+    path('ver_domicilio/editar_domicilio/<int:id>', editarDomicilio),
+    path('ver_domicilio/eliminar_domicilio/<int:id>', eliminarDomicilio),
+   
 ]
