@@ -39,5 +39,4 @@ urlpatterns = [
     path('ver_domicilio/nuevo_domicilio/', nuevoDomicilio),
     path('ver_domicilio/editar_domicilio/<int:id>', editarDomicilio),
     path('ver_domicilio/eliminar_domicilio/<int:id>', eliminarDomicilio),
-   
 ]
